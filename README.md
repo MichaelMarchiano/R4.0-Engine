@@ -60,7 +60,7 @@ The official documentation is hosted on [ReadTheDocs](https://docs.godotengine.o
 It is maintained by the community in its own [GitHub repository](https://github.com/godotengine/godot-docs).
 
 The [class reference](https://docs.godotengine.org/en/latest/classes/)
-is also accessible from the Godot editor.
+is also accessible from the editor.
 
 The official demos are maintained in their own [GitHub repository](https://github.com/godotengine/godot-demo-projects)
 as well.
