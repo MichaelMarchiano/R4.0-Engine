@@ -1,6 +1,6 @@
-# Godot Engine authors
+# Engine authors
 
-Godot Engine is developed by a community of voluntary contributors who
+R4.0 Engine is developed by a community of voluntary contributors who
 contribute code, bug reports, documentation, artwork, support, etc.
 
 It is impossible to list them all; nevertheless, this file aims at listing
@@ -12,12 +12,12 @@ name is available.
 
 ## Project Founders
 
-    Juan Linietsky (reduz)
+    Michael Marchiano (reduz)
     Ariel Manzur (punto-)
 
 ## Lead Developer
 
-    Juan Linietsky (reduz)
+    Michael Marchiano (reduz)
 
 ## Project Manager
 
@@ -116,7 +116,6 @@ name is available.
     Johannes Witt (HaSa1002)
     Johan Manuel (29jm)
     Joshua Grams (JoshuaGrams)
-    Juan Linietsky (reduz)
     Julian Murgia (StraToN)
     Julien Nguyen (Blackiris)
     Justo Delgado (mrcdk)
@@ -151,7 +150,7 @@ name is available.
     Max Hilbrunner (mhilbrunner)
     merumelu
     Meru Patel (Janglee123)
-    Michael Alexsander (YeldhamDev)
+    Michael Marchiano (reduz)
     MichiRecRoom (LikeLakers2)
     mrezai
     muiroc
