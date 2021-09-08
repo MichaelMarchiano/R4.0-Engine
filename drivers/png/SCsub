@@ -1,0 +1,43 @@
+Import('env')
+Import('env_drivers')
+
+
+png_sources = [
+	"png/example.c",
+	"png/png.c",
+	"png/pngerror.c",
+	"png/pngget.c",
+	"png/pngmem.c",
+	"png/pngpread.c",
+	"png/pngread.c",
+	"png/pngrio.c",
+	"png/pngrtran.c",
+	"png/pngrutil.c",
+	"png/pngset.c",
+	"png/pngtrans.c",
+	"png/pngwio.c",
+	"png/pngwrite.c",
+	"png/pngwtran.c",
+	"png/pngwutil.c",
+	"png/resource_saver_png.cpp",
+	"png/image_loader_png.cpp"
+]
+
+# Currently .ASM filter_neon.S does not compile on NT.
+import os
+if ("neon_enabled" in env and env["neon_enabled"]) and os.name!="nt":
+	env_drivers.Append(CPPFLAGS=["-DPNG_ARM_NEON_OPT=2"])
+	env_neon = env_drivers.Clone();
+	if "S_compiler" in env:
+		env_neon['CC'] = env['S_compiler']
+	#env_neon.Append(CPPFLAGS=["-DPNG_ARM_NEON"])
+	png_sources.append(env_neon.Object("#drivers/png/arm/arm_init.c"))
+	png_sources.append(env_neon.Object("#drivers/png/arm/filter_neon.S"))
+else:
+	env_drivers.Append(CPPFLAGS=["-DPNG_ARM_NEON_OPT=0"])
+
+env.drivers_sources+=png_sources
+
+#env.add_source_files(env.drivers_sources, png_sources)
+
+Export('env')
