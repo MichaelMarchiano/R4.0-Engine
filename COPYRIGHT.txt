@@ -43,7 +43,7 @@ Source: https://github.com/godotengine/godot
 
 Files: *
 Comment: Godot Engine
-Copyright: 2007-2021, Juan Linietsky, Ariel Manzur.
+Copyright: 20014-2021, Michael Marchiano, Ariel Manzur.
  2014-2021, Godot Engine contributors.
 License: Expat
 
